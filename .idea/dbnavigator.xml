@@ -9,12 +9,6 @@
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
-  <component name="DBNavigator.Project.DatabaseBrowserManager">
-    <autoscroll-to-editor value="false" />
-    <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
-    <loaded-nodes />
-  </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="51b1e6f2-446b-4f3b-b25a-c233b037f895">
       <console name="online-store" type="STANDARD" schema="mysql" session="Main"><![CDATA[CREATE DATABASE online-store;]]></console>
@@ -28,26 +22,6 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="51b1e6f2-446b-4f3b-b25a-c233b037f895" />
-  </component>
-  <component name="DBNavigator.Project.ExecutionManager">
-    <retain-sticky-names value="false" />
-  </component>
-  <component name="DBNavigator.Project.MethodExecutionManager">
-    <method-browser />
-    <execution-history>
-      <group-entries value="true" />
-      <execution-inputs />
-    </execution-history>
-    <argument-values-cache />
-  </component>
-  <component name="DBNavigator.Project.ObjectQuickFilterManager">
-    <last-used-operator value="EQUAL" />
-    <filters />
-  </component>
-  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces>
-      <mapping database-type="MYSQL" interface-id="DEFAULT" />
-    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>

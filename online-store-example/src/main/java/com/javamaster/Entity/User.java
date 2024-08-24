@@ -27,5 +27,8 @@ public class User extends AbstractEntity {
     @Column
     private String password;
 
+    @Column
+    private String address;
+
 }
 
