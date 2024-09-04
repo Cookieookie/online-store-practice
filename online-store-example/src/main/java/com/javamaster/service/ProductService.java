@@ -1,4 +1,12 @@
-package com.javamaster.service;
+package com.javamaster.Service;
 
-public class ProductService {
+import com.javamaster.Entity.Product;
+
+import java.util.List;
+
+public interface ProductService {
+
+    List<Product> findAll();
+
+    Product findById(Integer id);
 }
