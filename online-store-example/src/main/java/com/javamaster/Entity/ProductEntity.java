@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 @Table(name = "product_table")
 @Entity
 @Data
-public class Product extends AbstractEntity {
+public class ProductEntity extends AbstractEntity {
 
     @Column
     private String title;

@@ -1,6 +1,6 @@
-package com.javamaster.Service;
+package com.javamaster.service;
 
-import com.javamaster.Entity.Product;
+import com.javamaster.Entity.ProductEntity;
 import com.javamaster.Exception.NotFoundException;
 import com.javamaster.repository.ProductRepository;
 import lombok.AllArgsConstructor;
@@ -15,13 +15,13 @@ public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
     @Override
-    public List<Product> findAll() {
+    public List<ProductEntity> findAll() {
         return productRepository.findAll();
     }
 
     @Override
     @SneakyThrows
-    public Product findById(Integer id) {
+    public ProductEntity findById(Integer id) {
         return productRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("Sorry! Product not Found."));
     }

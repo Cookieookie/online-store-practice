@@ -1,8 +1,6 @@
 package com.javamaster.Entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;
 
@@ -10,7 +8,7 @@ import lombok.ToString;
 @Entity
 @Data
 @ToString(exclude = "password")
-public class User extends AbstractEntity {
+public class UserEntity extends AbstractEntity {
 
     @Column
     private String firstName;
@@ -29,6 +27,10 @@ public class User extends AbstractEntity {
 
     @Column
     private String address;
+
+    @Column
+    @Enumerated(EnumType.STRING)
+    private UserRole role;
 
 }
 

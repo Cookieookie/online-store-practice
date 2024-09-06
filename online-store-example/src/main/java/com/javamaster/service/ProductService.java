@@ -1,12 +1,12 @@
-package com.javamaster.Service;
+package com.javamaster.service;
 
-import com.javamaster.Entity.Product;
+import com.javamaster.Entity.ProductEntity;
 
 import java.util.List;
 
 public interface ProductService {
 
-    List<Product> findAll();
+    List<ProductEntity> findAll();
 
-    Product findById(Integer id);
+    ProductEntity findById(Integer id);
 }

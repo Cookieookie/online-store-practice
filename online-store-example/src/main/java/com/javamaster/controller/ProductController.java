@@ -1,6 +1,6 @@
 package com.javamaster.Controller;
 
-import com.javamaster.Entity.Product;
+import com.javamaster.Entity.ProductEntity;
 import com.javamaster.Service.ProductService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,13 +18,13 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping("/products")
-    public List<Product> getAllProducts() {
+    public List<ProductEntity> getAllProducts() {
         log.info("Handles get all products request");
         return productService.findAll();
     }
     
     @GetMapping("/product/{id}")
-    public Product findById(@PathVariable Integer id) {
+    public ProductEntity findById(@PathVariable Integer id) {
         log.info("Handles getting products by id");
         return productService.findById(id);
     }

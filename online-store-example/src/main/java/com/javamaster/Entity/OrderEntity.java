@@ -6,18 +6,13 @@ import lombok.Data;
 @Table(name = "order-table")
 @Entity
 @Data
-public class Order extends AbstractEntity {
+public class OrderEntity extends AbstractEntity {
 
     @Column
     private String comment;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    User user;
-
-    @ManyToOne
-    @JoinColumn (name = "purchase_item_id")
-    private PurchaseItem purchaseItem;
-
+    UserEntity userEntity;
 
 }

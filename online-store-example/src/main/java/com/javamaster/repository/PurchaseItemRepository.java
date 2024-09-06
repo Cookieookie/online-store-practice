@@ -1,10 +1,9 @@
 package com.javamaster.repository;
 
-import com.javamaster.Entity.PurchaseItem;
-import com.javamaster.Entity.User;
+import com.javamaster.Entity.PurchaseItemEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface PurchaseItemRepository extends JpaRepository<PurchaseItem, Integer> {
+public interface PurchaseItemRepository extends JpaRepository<PurchaseItemEntity, Integer> {
 
 
 }
