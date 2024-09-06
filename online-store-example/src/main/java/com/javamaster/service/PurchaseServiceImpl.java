@@ -1,4 +1,4 @@
-package com.javamaster.Service;
+package com.javamaster.service;
 
 import com.javamaster.Controller.dto.FinishPurchaseRequest;
 import lombok.AllArgsConstructor;

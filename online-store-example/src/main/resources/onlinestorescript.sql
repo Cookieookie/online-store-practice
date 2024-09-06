@@ -33,3 +33,10 @@ CREATE TABLE order_table (
     FOREIGN KEY (purchase_item_id) REFERENCES purchase_item(id),
     FOREIGN KEY (user_id) REFERENCES user_table(id)
 );
+
+ALTER TABLE purchase_item_table
+ADD order_id INTEGER NOT NULL;
+
+ALTER TABLE purhcase_item_table
+ADD CONSTRAINT purchase_item_table_order_table_id_fk
+FOREIGN KEY (order_id) REFERENCES order_table;
